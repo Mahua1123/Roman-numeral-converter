@@ -17,7 +17,7 @@ def main_post():
     if request.method == 'POST':
         alpha = request.form['number']
         if not alpha.isdecimal():
-            return render_template('index.html', developer_name='Guile', not_valid=True)
+            return render_template('index.html', developer_name='Mahua', not_valid=True)
         number = int(alpha)
         if not 0 < number < 4000:
             return render_template('index.html', developer_name='Guile', not_valid=True)
